@@ -1,0 +1,61 @@
+﻿@model ProjectMVC.Models.Seller
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Seller</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Companyname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Companyname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Semail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Semail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Spassword)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Spassword)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Saddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Saddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contactno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Contactno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sid)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Sname">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

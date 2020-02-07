@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+
+        h1{
+            background-color:pink;
+        color:aqua;
+        font-family:Arial;
+        }
+        /*id selector*/
+        #pname
+        {
+            color:green;
+            font-size:20px;
+            font-weight:bold;
+        }
+        /*class selector*/
+        .p2
+        {
+            background-color:lightblue;
+            color:#000000;
+            font-size:48px;
+            font-weight:bold;
+        }
+        /*attribute selector*/
+        input[type="text"]
+        {
+            background-color:aqua;
+            color:red;
+        }
+        /*universal style*/
+       *{
+            font-style:italic;
+        }
+       /*group style*/
+       h3,h1
+       {
+        color:crimson;
+       }
+       div>p{
+           color:blue;
+           font-size:20px;
+           font-weight:bold;
+       }
+       div+p{
+           color:darkgrey;
+           font-size:20px;
+           font-weight:bold;
+       }
+       div-p{
+           color:orangered;
+           font-size:20px;
+           font-weight:bold;
+       }
+    </style>
+</head>
+<body>
+    <h3 style="color:yellow;font-size:24px;background-color:bisque">
+        Welcome to Cascaded style Sheet
+    </h3>
+    <p id="pname">Welcome to BookYourHotel Website </p>
+    <p class="p2">Hotel booking facility at your doorstep</p>
+    <p> Welcome to BookYourHotel website</p>
+    <h2 class="p2" >Welcome to Chennai</h2>
+    <div><span><p>Welcome to CTS</p></span></div>
+    <div><p>Welcome to CTS</p><strong>hi</strong></div>
+    <h3>Username</h3><input type="text" />
+    <h3>Password</h3><input type="password" />
+    <h1>Welcome to CSS</h1>
+    <div>Selector</div>
+    <p>immediate</p>
+
+</body>
+</html>
